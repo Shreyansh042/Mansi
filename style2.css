@@ -133,6 +133,9 @@ option{
  body{
     background-image: url(./2.jpg);
  }
+ .register-link p{
+    font-size: small;
+ }
     }
     select{
         width: 100%;
