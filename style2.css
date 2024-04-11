@@ -172,3 +172,7 @@ select:hover{
 label{
     margin-top: 50px;
 }
+.wrapper h1{
+    margin-bottom: 5px;
+
+}
