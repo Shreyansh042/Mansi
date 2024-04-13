@@ -10,8 +10,7 @@
     <style>
   .head{
     display: block;
-    background: linear-gradient(rgb(83, 2, 149), rgb(114, 37, 168), rgb(221, 190, 247));
-    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(rgb(15 149 2), rgb(60 168 37), rgb(166 204 52));    font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
     width: 100%;
     font-size: 1.2em;
@@ -112,6 +111,20 @@ i{
     z-index:-100;
     border: solid 1px;
     border-radius: 12px;
+  }
+  @media (max-width: 480px) {
+    video{
+      display: flex;
+    gap: 5px;
+    position:absolute;
+    top: 200px;
+    left: 0;
+    width: 500px;
+    z-index:-100;
+    border: solid 1px;
+    border-radius: 12px;
+    }
+    
   }
     </style>
 </head>
