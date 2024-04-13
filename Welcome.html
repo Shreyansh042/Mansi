@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link rel="stylesheet" href="./style1.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    
     <style>
-    .head{
+  .head{
     display: block;
-    text-align: center;
-    background: linear-gradient(rgb(3, 189, 105), rgb(83, 243, 123), rgb(203, 243, 192));
+    background: linear-gradient(rgb(83, 2, 149), rgb(114, 37, 168), rgb(221, 190, 247));
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
     width: 100%;
-    color: white;
     font-size: 1.2em;
+    border: none;
+    border-radius: 15px;
+    margin-top :0;
+    position: relative;
+    top: 0;
 }
 body{
     padding: 0;
     margin: 0;
 }
 h2{
-    color:red
+    color:rgb(0, 0, 0);
+    text-align: center;
 }
-.head a{
+h1{
+    text-align: center;
+}
+.head {
     color: white;
     text-decoration: none;
 }
@@ -34,12 +42,120 @@ i{
  left: 0px;
  right: 125px;
 }
+.dropbtn {
+    background-color: transparent ;
+    color: Black;
+    font-size: 16px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: transparent;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: transparent;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover {background-color: #ddd;}
+  .show {display: block;}
+  .dropbtn i{
+    position: relative;
+    top: 1px;
+  }
+  .head .abt{
+    color: azure;
+    text-decoration: none;
+  }
+  .dropdown-content a{
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+  }
+  .bx-search-alt-2{
+    position: relative;
+    top: 1px;
+  }
+  .navigation{
+    position: absolute;
+    display: inline-block;
+    left: 8000%;
+  }
+  .btn{
+    position: absolute;
+    top: 2px;
+  }
+  video{
+    display: flex;
+    gap: 5px;
+    position:absolute;
+    top: 175px;
+    left: 0;
+    width: 500px;
+    z-index:-100;
+    border: solid 1px;
+    border-radius: 12px;
+  }
     </style>
 </head>
 <body>
+  <video muted loop autoplay >
+    <source src="./gooey.ai animation frame 20 prompt A girl playin...rompt a girl providing water for birds and trees.mp4" type="video/mp4">
+  </video>
     <div class="head">
-    <h1>Welcome to <a href="./about.html">M.A.N.S.I.</a></h1>
+    <h1>Welcome to <a href="./about.html" class="abt" >M.A.N.S.I.</a></h1>
     <h2>Movement for Nature & Animals, Stray Initiatives</h2>
+    <div class="drop-menu">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class='bx bx-menu'></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Home</a>
+              <a href="./about.html">About</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="navigation">
+            <input type="search" class="search">
+            <button type="submit" class="btn"><i class='bx bx-search-alt-2' ></i></button>
+        </div>
+            
+          </div>
+</div>
+    
     </div>
+    <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+        
 </body>
 </html>

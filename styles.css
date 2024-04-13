@@ -10,9 +10,19 @@ body{
     align-items: center;
     min-height: 100vh;
     /* background-color: seagreen; */
-    background-image: url(./pxfuel.jpg);
+    background-image: url(./peakpx.jpg);
 }
-.wrapped{
+/* .inst{
+    width: 420px;
+    background: transparent;
+    color: white;
+    padding:30px 40px ;
+    backdrop-filter: blur(20px);
+    position: relative;
+    bottom : 350px;
+    left: 260px */
+/* } */
+form{
     width: 420px;
     background: transparent;
     color: white;
@@ -20,6 +30,13 @@ body{
     border-radius: 12px;
     border: 2px solid rgba(255,255,255,.2);
     backdrop-filter: blur(20px);
+}
+.title{
+    margin-bottom: 50px;
+    color: azure;
+    font-size: 70px;
+    text-decoration: underline;
+    font-family:'Courier New', Courier, monospace;
 }
 h1{
     font-size: 36px;
