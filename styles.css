@@ -125,6 +125,9 @@ h1{
 }
 
 @media (max-width:480px){
-    .wrapped{
+    form{
         max-width: 320px;}
+    .title{
+        font-size: 60px;
+    }
     }
